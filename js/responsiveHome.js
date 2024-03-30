@@ -11,3 +11,26 @@ if (close) {
       nav.classList.remove("active");
     });
   }
+
+  //jQuery for Dark Mode
+  $(document).ready(function() {
+    $('#dark-mode-toggle').click(function() {
+        $('body').toggleClass('dark-mode');
+    });
+});
+//jQuery for Scroll Up button
+$(document).ready(function() {
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > 100) {
+          $('.scroll-to-top').fadeIn();
+      } else {
+          $('.scroll-to-top').fadeOut();
+      }
+  });
+
+  $("body").on("click", ".scroll-to-top", function() {
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+  });
+});
+
+s
