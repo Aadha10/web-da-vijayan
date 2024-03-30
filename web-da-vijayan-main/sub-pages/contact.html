@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="myApp">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .form-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    .error-message {
+      color: red;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+
+    .people-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .people {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .people img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .people p {
+      font-size: 16px;
+      text-align: center;
+      margin: 0;
+    }
+    .form {
+  display: flex;
+  align-items: center;
+}
+
+.form input[type="text"] {
+  flex: 1; 
+  margin-right: 20px; 
+  margin-top: 20px;
+}
+
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="shortcut icon" href="../assets/icon.png" type="image/.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsiveHome.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/shop.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="../index.html"><img src="../assets/logo.png" alt="logo" class="logo" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../sub-pages/shop.html">Shop</a></li>
+          <li><a href="../sub-pages/blog.html">Blog</a></li>
+          <li><a href="../sub-pages/about.html">About</a></li>
+          <li>
+            <a class="active" href="../sub-pages/contact.html">Contact</a>
+          </li>
+          <li class="lg-bag">
+            <a href="../sub-pages/cart.html"
+              ><i class="fa-solid fa-bag-shopping"></i
+            ></a>
+          </li>
+          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="./sub-pages/cart.html"
+          ><i class="fa-solid fa-bag-shopping"></i
+        ></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+      <div id="dark-mode-toggle"></div>
+    </section>
+    <div class="scroll-to-top"><i class="fas fa-arrow-up"></i></div>
+    <section id="page-header" class="about-header">
+      <h2> Contact Us</h2>
+    </section>
+    <section id="contact-details" class="section-p1">
+      <div class="details">
+        <span>GET IN TOUCH</span>
+        <h2>Visit one of our agency loaction or contact us today</h2>
+        <h3>Head Office</h3>
+        <div>
+          <li>
+            <i class="fa-solid fa-map-pin"></i>
+            <p>Vellore Institute of Technology</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <p>enchanta@gmail.com</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <p>https://github.com/Aadha10</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            <p>Monday to saturday: 9.00am to 16.00pm</p>
+          </li>
+        </div>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0410799818437!2d79.15335867480186!3d12.969223187345907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1711803039637!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    
+  <div class="container" ng-controller="FormController">
+    <div class="form-container">
+      <h2 class="form-title">LEAVE A MESSAGE</h2>
+      <h3>We love to hear from you</h3><br>
+      <form name="messageForm" ng-submit="submitForm(messageForm.$valid)" novalidate>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" ng-model="message.name" placeholder="Enter your name" required>
+        <div class="error-message" ng-show="messageForm.name.$dirty && messageForm.name.$invalid">
+          <span ng-show="messageForm.name.$error.required">Name is required.</span>
+        </div>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" ng-model="message.email" placeholder="Enter your email" required>
+        <div class="error-message" ng-show="messageForm.email.$dirty && messageForm.email.$invalid">
+          <span ng-show="messageForm.email.$error.required">Email is required.</span>
+          <span ng-show="messageForm.email.$error.email">Invalid email address.</span>
+        </div>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" ng-model="message.subject" placeholder="Enter subject" required>
+        <div class="error-message" ng-show="messageForm.subject.$dirty && messageForm.subject.$invalid">
+          <span ng-show="messageForm.subject.$error.required">Subject is required.</span>
+        </div>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="messageText" ng-model="message.text" placeholder="Enter your message" rows="6"
+          required></textarea>
+        <div class="error-message" ng-show="messageForm.messageText.$dirty && messageForm.messageText.$invalid">
+          <span ng-show="messageForm.messageText.$error.required">Message is required.</span>
+        </div>
+
+        <button type="submit" ng-disabled="messageForm.$invalid">Submit</button>
+      </form>
+    </div>
+
+    <div class="people-container">
+      <div class="people">
+        <div>
+          <p><strong>Aadhavan</strong><br>CEO<br>Phone: 9942045688<br>Email:
+          Aadhavan.d2022@vitstudent.ac.in
+          </p></p>
+        </div>
+        <div>
+          <p><strong>Bhavesh</strong><br>CFO<br>Phone: 7094447999<br>Email:
+            bhavesh.sp2022a@vitstudent.ac.in</p>
+        </div>
+        <div>
+          <p><strong>Aranga Sakthivel</strong><br>CBO<br>Phone: 9741049742<br>Email:
+            aranga.sakthivel2022@vitstudent.ac.in</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var app = angular.module('myApp', []);
+    app.controller('FormController', function($scope) {
+      $scope.submitForm = function(isValid) {
+        if (isValid) {
+          alert('Thank you for contacting us. We will get back to you soon.');
+        } else {
+          alert('Please fill out the form correctly.');
+        }
+      };
+    });
+  </script>
+   <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sign up for newsletters</h4>
+      <p>
+        Get E-mail updates about our latest shop and
+        <span>special offers.</span>
+      </p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your email address" />
+      <button class="normal">Sign Up</button>
+    </div>
+  </section>
+  
+    <footer class="section-p1">
+      <div class="col">
+        <img src="./assets/Logo/Enchanta.png" alt="logo" class="logoS">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong>Vellore Institue of Technology</p>
+        <p><strong>Phone:</strong>(+91) 99942045688/ (+91) 7094447999</p>
+        <p><strong>Hours:</strong>10:00 - 18:00, Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+    </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Poilcy</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="../assets/pay/app.jpg" alt="app" />
+          <img src="../assets/pay/play.jpg" alt="play" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="../assets/pay/pay.png" alt="pay" />
+      </div>
+      <div class="copyright">
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
+    <script src="./js/responsiveHome.js"></script>\
+  </body>
+</html>

@@ -1,0 +1,318 @@
+@media screen and (max-width:799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60pc rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: all 0.4s ease;
+    }
+
+    #navbar.active {
+        right: 0;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        font-size: 24px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+    }
+
+    .lg-bag {
+        display: none;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #sm-banner .bannner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    #sm-banner .bannner-box:nth-child(2) {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #banner3 {
+        padding: 0 40px;
+    }
+
+    #banner3 .banner-box {
+        width: 28%;
+    }
+
+    #newsletter .form {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:477px) {
+    #navbar {
+       width: 225px;
+    }
+    .section-p1{
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 30px;
+    }
+
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #feature {
+        justify-content: space-between;
+    }
+    #product1 .pro {
+       width: 100%;
+    }
+    #banner {
+        height: 40vh;
+    }
+    #sm-banner .bannner-box {
+        height: 40vh;
+    }
+    #sm-banner .bannner-box:nth-child(2) {
+        margin-top: 20px;
+    }
+    #banner3 {
+        padding: 0 20px;
+    }
+    #banner3 .banner-box {
+        width: 100%;
+    }
+    #newsletter {
+        padding: 40px 20px;
+    }
+    #newsletter .form {
+        width: 100%;
+    }
+    footer .copyright {
+        text-align: start;
+    }
+}
+/* Styles for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 25%;
+    padding: 0 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-column.install {
+    width: 30%;
+}
+
+.footer-column.install .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styles for dark mode */
+.dark-mode footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode footer a {
+    color: #fff;
+}
+
+body {
+    background-color: #fff; /* Light mode background color */
+    color: #333; /* Light mode text color */
+}
+
+.dark-mode {
+    background-color: #333; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+}
+
+/* Invert all colors for dark mode */
+.dark-mode #header {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #header a {
+    color: #fff;
+}
+
+/* Update feature section for dark mode */
+.dark-mode #feature .fe-box {
+    background-color: #fff; /* Light mode background color */
+    color: #333; /* Light mode text color */
+    border: 1px solid #ccc; /* Light mode border color */
+    padding: 15px;
+}
+
+/* Update other styles as needed for dark mode */
+
+.dark-mode #banner {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #banner button {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-mode #sm-banner .bannner-box {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #sm-banner .bannner-box button {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-mode #banner3 .banner-box {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #banner3 .banner-box h3 {
+    color: #fff;
+}
+
+.dark-mode #newsletter {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #newsletter input {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-mode #newsletter button {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-mode footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode footer a {
+    color: #fff;
+}
+
+.dark-mode footer .icon i {
+    color: #fff;
+}
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.scroll-to-top i {
+    font-size: 20px;
+}
