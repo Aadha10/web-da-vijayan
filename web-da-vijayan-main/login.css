@@ -1,0 +1,92 @@
+/* Resetting default margin and padding */
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting background gradient for the body */
+body {
+    background-color: #dddbe6;
+    background-image: url('one.jpg'); /* Replace 't.jpg' with the path to your image */
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+}
+/* Styling the header */
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(27, 21, 21);
+    font-size: 36px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Styling the form */
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Light purple background */
+    width: 300px;
+    margin: 50px auto 50px; /* Lowered position */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(29, 27, 27, 0.2);
+}
+
+/* Styling form labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Styling form inputs */
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #333;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    transition: border-bottom 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-bottom: 2px solid #ff6b6b;
+}
+
+/* Styling error messages */
+.error {
+    color: #ff6b6b;
+    font-size: 14px;
+}
+
+/* Styling the login button */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(182, 173, 233, 0.9);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(156, 138, 255, 0.9);
+}
+
+/* Styling the message div */
+#message {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
