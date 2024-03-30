@@ -158,3 +158,161 @@
         text-align: start;
     }
 }
+/* Styles for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 25%;
+    padding: 0 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-column.install {
+    width: 30%;
+}
+
+.footer-column.install .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styles for dark mode */
+.dark-mode footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode footer a {
+    color: #fff;
+}
+
+body {
+    background-color: #fff; /* Light mode background color */
+    color: #333; /* Light mode text color */
+}
+
+.dark-mode {
+    background-color: #333; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+}
+
+/* Invert all colors for dark mode */
+.dark-mode #header {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #header a {
+    color: #fff;
+}
+
+/* Update feature section for dark mode */
+.dark-mode #feature .fe-box {
+    background-color: #fff; /* Light mode background color */
+    color: #333; /* Light mode text color */
+    border: 1px solid #ccc; /* Light mode border color */
+    padding: 15px;
+}
+
+/* Update other styles as needed for dark mode */
+
+.dark-mode #banner {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #banner button {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-mode #sm-banner .bannner-box {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #sm-banner .bannner-box button {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-mode #banner3 .banner-box {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #banner3 .banner-box h3 {
+    color: #fff;
+}
+
+.dark-mode #newsletter {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #newsletter input {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-mode #newsletter button {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-mode footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode footer a {
+    color: #fff;
+}
+
+.dark-mode footer .icon i {
+    color: #fff;
+}
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.scroll-to-top i {
+    font-size: 20px;
+}
